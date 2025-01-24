@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Frontend;
+use App\Models\About;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
@@ -28,7 +29,8 @@ class PageController extends Controller
     public function hakkımızda()
     {
 
-     return view('frontend.pages.hakkımızda');
+     $about = About::where('id','1')->first();
+     return view('frontend.pages.hakkımızda', compact('about'));
     }
 
     public function sepet()
