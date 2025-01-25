@@ -39,7 +39,6 @@ class PageController extends Controller
     return view('frontend.pages.sepet');
    }
 
-
    public function iletisim()
    {
     return view('frontend.pages.iletisim');

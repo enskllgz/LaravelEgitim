@@ -21,7 +21,7 @@ class AboutSeeder extends Seeder
         'text_1_content'=>'Ürünlerimize Ücretsiz Kargo Sağlarız',
         'text_2_icon'=>'icon-refresh2',
         'text_2'=>'Geri İade.',
-        'text_2_content'=>'i30 Gün İçierisinde geri iade sağlarız',
+        'text_2_content'=>'30 Gün İçierisinde geri iade sağlarız',
         'text_3_icon'=>'icon-help',
         'text_3'=>'Destek',
         'text_3_content'=>'7/24 bize ulaşabilirsiniz',

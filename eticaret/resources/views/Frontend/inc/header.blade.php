@@ -12,7 +12,7 @@
 
           <div class="col-12 mb-3 mb-md-0 col-md-4 order-1 order-md-2 text-center">
             <div class="site-logo">
-              <a href="{{route('anasayfa')}}" class="js-logo-clone">{{config('app.name')}}</a>
+              <a href="#" class="js-logo-clone">{{config('app.name')}}</a>
             </div>
           </div>
 
@@ -38,7 +38,7 @@
     <nav class="site-navigation text-right text-md-center"role="navigation">
         <div class="container">
         <ul class="site-menu js-clone-nav d-none d-md-block">
-        <li class="active"><a href="{{route('anasayfa')}}">Anasayfa</a></li>
+        <li class="active"><a href="#">Anasayfa</a></li>
         <li class="has-children">
         <a href="#">Kategori</a>
         <ul class="dropdown">

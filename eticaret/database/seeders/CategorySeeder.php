@@ -31,6 +31,15 @@ class CategorySeeder extends Seeder
             'status'  =>'1'
         ]);
 
+        Category::create([
+            'image' =>null,
+            'thumbnail' =>null,
+            'cat_ust' => $erkek->id,
+            'name'  =>'Erkek Pantolon',
+            'content' =>'Erkek Pantolonları',
+            'status'  =>'1'
+        ]);
+
         $kadın = Category::create([
             'image' =>null,
             'thumbnail' =>null,
@@ -45,6 +54,15 @@ class CategorySeeder extends Seeder
             'cat_ust' => $kadın->id,
             'name'  =>'Kadın Çanta',
             'content' =>'Kadın Çantaları',
+            'status'  =>'1'
+        ]);
+
+        Category::create([
+            'image' =>null,
+            'thumbnail' =>null,
+            'cat_ust' => $kadın->id,
+            'name'  =>'Elbise',
+            'content' =>'Kadın Elbiseleri',
             'status'  =>'1'
         ]);
 
