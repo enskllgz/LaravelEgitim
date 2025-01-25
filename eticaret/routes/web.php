@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use App\Models\SiteSetting;
 use App\Http\Controllers\Frontend\PageController;
+use App\Http\Controllers\AjaxController;
 use App\Http\Controllers\Frontend\PageHomeController;
 use App\Http\Middleware\SiteSettingMiddleware;
 
@@ -16,4 +17,5 @@ Route::get('/cocuk-giyim', [PageController::class, 'urunler'])->name("cocukurunl
 Route::get('/urun/detay', [PageController::class, 'urundetay'])->name("urundetay");
 Route::get('/hakkımızda', [PageController::class, 'hakkımızda'])->name("hakkımızda");
 Route::get('/iletisim', [PageController::class, 'iletisim'])->name("iletisim");
+Route::post('/iletisim', [AjaxController::class, 'iletisimkaydet'])->name("iletisim.kaydet");
 Route::get('/sepet', [PageController::class, 'sepet'])->name("sepet");
