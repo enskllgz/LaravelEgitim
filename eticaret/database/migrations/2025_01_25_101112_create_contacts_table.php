@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('subject')->nullable();
             $table->text('message')->nullable();
             $table->string('ip')->nullable();
-            $table->enum('status',['0', '1'])->nullable;
+            $table->enum('status', ['0', '1'])->default('0')->nullable(); // Varsayılan '0'
             $table->timestamps();
         });
     }
