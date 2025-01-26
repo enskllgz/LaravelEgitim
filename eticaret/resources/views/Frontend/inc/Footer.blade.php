@@ -6,7 +6,7 @@
             <div class="col-md-12">
               <h3 class="footer-heading mb-4">Menü</h3>
             </div>
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-6">
               <ul class="list-unstyled">
                 <li><a href="{{route('anasayfa')}}">Anasayfa</a></li>
                 <li><a href="{{route('hakkımızda')}}">Hakkımızda</a></li>
@@ -15,32 +15,26 @@
               </ul>
             </div>
             <div class="col-md-6 col-lg-6">
-              <ul class="list-unstyled">
-              </ul>
             </div>
             <div class="col-md-6 col-lg-6">
-              <ul class="list-unstyled">
               </ul>
             </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
 
-          </a>
         </div>
-        <div class="col-md-6 col-lg-3">
+        </div>
+        <div class="col-md-6 col-lg-">
           <div class="block-5 mb-5">
             <h3 class="footer-heading mb-4">İletişim Bilgileri</h3>
             <ul class="list-unstyled">
-              <li class="address">Adress</li>
-              <li class="phone"><a href="tel://23923929210">0555 000 0000</a></li>
-              <li class="email">test@test.com</li>
+              <li class="address">Yenimahalle/Ankara</li>
+              <li class="phone"><a href="tel://23923929210">0537 000 0000</a></li>
+              <li class="email">example@eticaretsitem.com</li>
             </ul>
           </div>
 
           <div class="block-7">
             <form action="#" method="post">
-              <label for="email_subscribe" class="footer-heading">Abone </label>
+              <label for="email_subscribe" class="footer-heading">Abone</label>
               <div class="form-group">
                 <input type="text" class="form-control py-4" id="email_subscribe" placeholder="Email">
                 <input type="submit" class="btn btn-sm btn-primary" value="Send">

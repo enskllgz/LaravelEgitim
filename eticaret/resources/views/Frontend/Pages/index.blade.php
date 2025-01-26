@@ -7,11 +7,12 @@
       <div class="container">
         <div class="row align-items-start align-items-md-center justify-content-end">
           <div class="col-md-5 text-center text-md-left pt-5 pt-md-0">
-            <h1 class="mb-2">{{$slider->name ?? __('Merhaba')}}<h1>
+            <h1 class="mb-2">{{$slider->name ?? __('Merhaba')}}</h1>
             <div class="intro-text text-center text-md-left">
               <p class="mb-4">{{$slider->content ?? ''}}</p>
               <p>
-                <a href="{{url('/urunler'), '/'.$slider->link}}" class="btn btn-sm btn-primary">Ürünlerimiz</a>
+                <a href="{{ $slider?->link }}" class="btn btn-sm btn-primary">Ürünlerimiz</a>
+
               </p>
             </div>
           </div>
@@ -28,7 +29,7 @@
             </div>
             <div class="text">
               <h2 class="text-uppercase">Ücretsiz Kargo</h2>
-              <p>Ürünlerinizi ücretsiz kargo ile gönderiyoruz</p>
+              <p>Gün içerisinde saat 15.00'a kadar vermiş olduğunuz siparişler aynı gün kargoda.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 d-lg-flex mb-4 mb-lg-0 pl-4" data-aos="fade-up" data-aos-delay="100">
@@ -36,8 +37,8 @@
               <span class="icon-refresh2"></span>
             </div>
             <div class="text">
-              <h2 class="text-uppercase">Geri İade</h2>
-              <p>2 iş günü içerisinde iade kabul ediyoruz.</p>
+              <h2 class="text-uppercase">Koşulsuz İade</h2>
+              <p>Ürünlerimizi iade edebilirsiniz.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 d-lg-flex mb-4 mb-lg-0 pl-4" data-aos="fade-up" data-aos-delay="200">
@@ -45,8 +46,8 @@
               <span class="icon-help"></span>
             </div>
             <div class="text">
-              <h2 class="text-uppercase">Müşreti Hizmetleri</h2>
-              <p>Müşteri hizmetlerimiz ile mesai saatleri içerisinde görüşebilirsiniz.</p>
+              <h2 class="text-uppercase">Müşteri Desteği</h2>
+              <p>Mesai saatleri içerisinde müşteri Desteği</p>
             </div>
           </div>
         </div>
@@ -57,7 +58,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-6 col-md-6 col-lg-4 mb-4 mb-lg-0" data-aos="fade" data-aos-delay="">
-            <a class="block-2-item" href="{{route('kadınurunler')}}">
+            <a class="block-2-item" href="{{route('kadinurunler')}}">
               <figure class="image">
                 <img src="images/women.jpg" alt="" class="img-fluid">
               </figure>
@@ -97,7 +98,7 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-7 site-section-heading text-center pt-4">
-            <h2>Yeni ürünler</h2>
+            <h2>Yeni Eklenen Ürünler</h2>
           </div>
         </div>
         <div class="row">
@@ -110,8 +111,8 @@
                   </figure>
                   <div class="block-4-text p-4">
                     <h3><a href="#">Tank Top</a></h3>
-                    <p class="mb-0">Finding perfect t-shirt</p>
-                    <p class="text-primary font-weight-bold">$50</p>
+                    <p class="mb-0">Aradığınız Süper ürün</p>
+                    <p class="text-primary font-weight-bold">50 ₺</p>
                   </div>
                 </div>
               </div>
@@ -122,8 +123,8 @@
                   </figure>
                   <div class="block-4-text p-4">
                     <h3><a href="#">Corater</a></h3>
-                    <p class="mb-0">Finding perfect products</p>
-                    <p class="text-primary font-weight-bold">$50</p>
+                    <p class="mb-0">Aradığınız Süper ürün</p>
+                    <p class="text-primary font-weight-bold">50 ₺</p>
                   </div>
                 </div>
               </div>
@@ -134,8 +135,8 @@
                   </figure>
                   <div class="block-4-text p-4">
                     <h3><a href="#">Polo Shirt</a></h3>
-                    <p class="mb-0">Finding perfect products</p>
-                    <p class="text-primary font-weight-bold">$50</p>
+                    <p class="mb-0">Aradığınız Süper ürün</p>
+                    <p class="text-primary font-weight-bold">50 ₺</p>
                   </div>
                 </div>
               </div>
@@ -173,7 +174,7 @@
       <div class="container">
         <div class="row justify-content-center  mb-5">
           <div class="col-md-7 site-section-heading text-center pt-4">
-            <h2>Big Sale!</h2>
+            <h2>Patron Çıldırdı !</h2>
           </div>
         </div>
         <div class="row align-items-center">
@@ -181,12 +182,14 @@
             <a href="#"><img src="images/blog_1.jpg" alt="Image placeholder" class="img-fluid rounded"></a>
           </div>
           <div class="col-md-12 col-lg-5 text-center pl-md-5">
-            <h2><a href="#">50% less in all items</a></h2>
-            <p class="post-meta mb-4">By <a href="#">Carl Smith</a> <span class="block-8-sep">&bullet;</span> September 3, 2018</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam iste dolor accusantium facere corporis ipsum animi deleniti fugiat. Ex, veniam?</p>
-            <p><a href="#" class="btn btn-primary btn-sm">Shop Now</a></p>
+            <h2><a href="#">Tüm Ürünlerde %50'ye varan indirim</a></h2>
+            <p class="post-meta mb-4">By <a>Enes Kellegöz</a> <span class="block-8-sep">&bullet;</span> 01.01.2025</p>
+            <p>31.01.2025 tarihine kadar yapacağınız her alışverişte %50'ye varan indirim</p>
+            <p><a href="#" class="btn btn-primary btn-sm">Şimdi Satın Al</a></p>
           </div>
         </div>
       </div>
     </div>
+
+
     @endsection

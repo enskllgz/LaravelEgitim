@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Shoppers &mdash; Colorlib e-Commerce Template</title>
+    <title>Enes Kellegöz</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -23,12 +23,12 @@
   <body>
 
   <div class="site-wrap">
-    @include('frontend.inc.header')
+
+    @include('Frontend.inc.header')
 
     @yield('content')
 
-
-    @include('frontend.inc.footer')
+   @include('Frontend.inc.footer')
   </div>
 
   <script src="js/jquery-3.3.1.min.js"></script>

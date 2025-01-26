@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\Slider;
+
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -11,15 +13,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('categories', function (Blueprint $table) {
+        Schema::create('sliders', function (Blueprint $table) {
             $table->id();
-            $table->string('image')->nullable;
-            $table->string('thumbnail')->nullable;
+            $table->string('image');
             $table->string('name');
-            $table->string('slug');
-            $table->string('content')->nullable;
-            $table->string('cat_ust')->nullable;
-            $table->enum('status', ['0', '1'])->default('1');
+            $table->text('content')->nullable;
+            $table->text('link')->nullable;
+            $table->enum('status', ['0', '1'])->default('0');
             $table->timestamps();
         });
     }
@@ -29,6 +29,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('categories');
+        Schema::dropIfExists('sliders');
     }
 };

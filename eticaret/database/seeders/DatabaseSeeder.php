@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
-use Database\Seeders\CategorySeeder;
 use App\Models\User;
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Slider;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -14,9 +14,24 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-       $this->call([
-        SliderSeeder::class,
-        CategorySeeder::class,
-       ]);
+
+        // User::factory(10)->create();
+
+        if (!User::where('email', 'test@example.com')->exists()) {
+            User::create([
+                'name' => 'Test User',
+                'email' => 'test@example.com',
+                'password' => bcrypt('password'),
+        ]);
+
+        $this->call([
+            SliderSeeder::class,
+            CategorySeeder::class,
+            DatabaseSeeder::class,
+            AboutSeeder::class,
+
+        ]);
+
     }
+}
 }
