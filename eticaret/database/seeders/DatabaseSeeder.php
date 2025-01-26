@@ -29,6 +29,7 @@ class DatabaseSeeder extends Seeder
             CategorySeeder::class,
             DatabaseSeeder::class,
             AboutSeeder::class,
+            ProductSeeder::class,
 
         ]);
 
