@@ -3,23 +3,22 @@
 namespace Database\Seeders;
 
 use App\Models\Slider;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class SliderSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
-    public function run()
+    public function run(): void
     {
-        Slider::create([
-            'image' =>'https://fakeimg.pl/250x100/',
-            'name'  =>'Kalite Tesadüf Değildir.',
-            'content' =>'E-Ticaret Sitemize Hoşgeldiniz',
-            'link'    =>'urunler',
-            'status'  =>'1'
-        ]);
+            Slider::create([
+                'image' => 'https://fakeimg.pl/250x100/',
+                'name' => 'Slider1',
+                'content' => 'Eticaret sitemize hoşgeldiniz',
+                'link'=> 'urunler',
+                'status'=>'1'
+            ]);
     }
 }
