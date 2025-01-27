@@ -53,24 +53,23 @@
             <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
               <div class="block-4 text-center border">
                 <figure class="block-4-image">
-                  <a href="shop-single.html"><img src="{{asset($product->image)}}" alt="Image placeholder" class="img-fluid"></a>
+                  <a href="{{route('urundetay'), $product->slug}}"><img src="{{asset($product->image)}}" alt="Image placeholder" class="img-fluid"></a>
                 </figure>
                 <div class="block-4-text p-4">
-                  <h3><a href="shop-single.html">{{asset($product->name)}}</a></h3>
-                  <p class="mb-0">{{asset($product->short_text)}}</p>
+                  <h3><a href="{{route('urundetay'), $product->slug}}">{{'Ürün 1'}}</a></h3>
+                  <p class="mb-0">{{'İyi Ürün'}}</p>
                   <p class="text-primary font-weight-bold">{{number_format($product->price, 0)}}</p>
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
-              <div class="block-4 text-center border">
-                <figure class="block-4-image">
-                  <a href="shop-single.html"><img src="images/shoe_1.jpg" alt="Image placeholder" class="img-fluid"></a>
-                </figure>
-                <div class="block-4-text p-4">
-                  <h3><a href="shop-single.html">Corater</a></h3>
-                  <p class="mb-0">Finding perfect products</p>
-                  <p class="text-primary font-weight-bold">$50</p>
+            <div class="">
+              <div class="">
+
+
+                <div class="">
+                  <h3><a href=""></a></h3>
+                  <p class="mb-0"></p>
+                  <p class=""></p>
                 </div>
               </div>
             </div>
