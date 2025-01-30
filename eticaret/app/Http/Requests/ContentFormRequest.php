@@ -11,34 +11,34 @@ class ContentFormRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
      * Get the validation rules that apply to the request.
      *
-     * @return array<string, \Illuminate\Contracts\Validation\ValidationRule|array<mixed>|string>
+     * @return array<string, \Illuminate\Contracts\Validation\Rule|array|string>
      */
     public function rules(): array
     {
         return [
-           'name' => 'required|string|min:3', // "name" için doğru format
-            'email' => 'required|email', // "email" için doğrulama
-            'subject' => 'required', // "subject" için doğrulama
-            'message' => 'required', // "message" için doğrulama
+            'name'=>'required|string|min:3',
+            'email'=>'required|email',
+            'subject'=>'required',
+            'message'=>'required'
         ];
     }
 
     public function messages(): array
     {
         return [
-            'name.required' => 'İsim Soyisim Zorunludur',
-            'name.string' => 'İsim Soyisim Karakterlerden Oluşmalı',
-            'name.min' => 'İsim Soyisim Minimum 3 Karakterden Oluşmalıdır',
-            'email.required' => 'E Posta Zorunludur',
-            'email.email' => 'Geçersiz Bir Email Adresi Girdiniz',
-            'subject.required' => 'Konu Kısmı Boş Geçilemez',
-            'message.required' => 'Mesaj Kısmı Boş Geçilemez',
+            'name.required' => 'İsim Soyisim Zorunlu',
+            'name.string' => 'İsim Soyisim Karakterlerden oluşmalı',
+            'name.min' => 'İsim Soyisim Minimum 3 karakterden olmalıdır.',
+            'email.required' => 'E-posta zorunlu',
+            'email.email' => 'Geçersiz bir email adresi',
+            'subject.required' => 'Konu kısmı boş geçilemez',
+            'message.required' => 'Mesaj kısmı boş geçilemez',
         ];
     }
 }
